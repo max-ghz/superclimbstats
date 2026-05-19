@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Climb stats leaderboard system">
+    <meta name="author" content="maxghz">
+    <title>Super Climb Stats - Player Profile</title>
+
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.4/dist/purify.min.js"></script>
+</head>
+
+<body>
+<header class="logo"></header>
+<div class="logoborder"></div>
+
+<div id="container">
+    <main id="main">
+        <section id="panel">
+            <ul class="panel-list">
+                <li>An archive of statistics from recovered legacy servers for the Climb mode in Soldat.</li>
+                <li>The only active server still running can be found at rzal.eu.</li>
+            </ul>
+        </section>
+
+        <div id="home-title">
+            <img src="images/fonts/super-climb-stats.png" alt="Super Climb Stats">
+        </div>
+
+        <section id="content">
+            <nav class="topnav">
+                <form>
+                    <input id="searchbox" type="text" name="q" placeholder="">
+                    <input type="submit" value="Search">
+                </form>
+
+                <div class="menu">
+                    <a href="index.html">Home</a>
+                    <a href="caps.html">Caps</a>
+                    <a href="players.html">Players</a>
+                    <a href="servers.html">Servers</a>
+                </div>
+            </nav>
+
+            <div id="playerInfo"></div>
+
+            <section class="player-caps">
+                <h3 class="section-title">Player Caps</h3>
+                <div class="statsbox" id="playerCaps"></div>
+            </section>
+
+            <div id="pagination"></div>
+
+            <footer class="site-footer">
+                © 2026 maxghz<br>
+                <a href="https://github.com/max-ghz/superclimbstats" target="_blank" rel="noopener noreferrer">Source code</a><br>
+            </footer>
+        </section>
+    </main>
+</div>
+
+<script type="module" src="app/profile.js"></script>
+</body>
+</html>

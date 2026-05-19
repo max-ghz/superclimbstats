@@ -1,0 +1,116 @@
+#container {
+    max-width: 900px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    border: none;
+    background: #fff;
+    box-shadow:
+            -8px 0 12px -4px rgba(0, 0, 0, 0.4),
+            8px 0 12px -4px rgba(0, 0, 0, 0.4);
+}
+
+.logo {
+    position: relative;
+    height: 170px;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+    background: url("../images/background/background.png") center center / cover no-repeat;
+}
+
+#home-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.logoborder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 13px;
+    padding: 0 12px;
+    border-top: 2px solid var(--color-gray);
+    border-bottom: 2px solid var(--color-gray);
+    background: var(--color-light);
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 28px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    background: url("../images/background/topbar.jpg") repeat-x center top;
+    background-size: auto 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 28px;
+}
+
+.menu a {
+    font-family: 'Shuttleblock', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--color-white);
+    text-shadow: 2px 2px 4px black;
+}
+
+#panel {
+    background: #e7e7e7;
+}
+
+#content {
+    padding: 10px;
+}
+
+@media (max-width: 1100px) {
+    .container {
+        width: 900px;
+        transform: scale(0.85);
+        transform-origin: top center;
+    }
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 6px;
+    border-radius: 3px;
+    background: #f4f4f4;
+}
+
+.pagination .label {
+    margin-right: 4px;
+}
+
+.pagination a {
+    padding: 2px 4px;
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+}
+
+.pagination .current {
+    padding: 2px 4px;
+    color: var(--color-black);
+}
+
+.pagination .dots {
+    padding: 0 4px;
+    color: var(--color-black);
+}
+
+.site-footer {
+    padding: 10px;
+    text-align: right;
+}
