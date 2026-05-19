@@ -4,12 +4,12 @@ import { fetchInitialCaps } from '../api/core/apiClient.js';
 import { sanitize } from '../utils/sanitize.js';
 
 const SERVER_INFO = {
-    1: { ip: 'unknown',        port: null, since: '2007-11-09 02:00:00',  shutdown: '2008-04-16 11:22:58',   fullyRestored: 'True',  owner: 'BombSki',  admins: ['Admin1', 'Admin2'] },
-    2: { ip: 'unknown',        port: null,  since: 'unknown',             shutdown: '2015-05-26 07:45:22',   fullyRestored: 'False', owner: 'KaLaF .dC',        admins: [] },
-    3: { ip: '51.68.213.93',   port: 23082, since: '2018-07-16 06:42:09', shutdown: '2022-04-22 01:07:58',   fullyRestored: 'True',  owner: 'Savage',        admins: [] },
-    4: { ip: '85.214.69.82',   port: 23073, since: 'unknown',             shutdown: '2013-10-01 10:57:54',   fullyRestored: 'False', owner: 'Spotix',        admins: [] },
-    5: { ip: '209.141.52.123', port: 65401, since: '2008-07-10 02:20:37', shutdown: '2013-10-03 04:41:26',   fullyRestored: 'False', owner: 'Swine Bloo',  admins: ['Admin3'] },
-    6: { ip: '80.72.37.10',    port: 23076, since: '2009-12-17 12:59:37', shutdown: '2017-06-10 02:00:00',   fullyRestored: 'True',  owner: 'helloer & Bonecrusher',        admins: [] },
+    1: { ip: 'unknown',        port: null, since: '2007-11-09 02:00:00',  shutdown: '2008-04-16 11:22:58',   fullyRestored: 'True',  owner: 'BombSki' },
+    2: { ip: 'unknown',        port: null,  since: 'unknown',             shutdown: '2015-05-26 07:45:22',   fullyRestored: 'False', owner: 'KaLaF .dC' },
+    3: { ip: '51.68.213.93',   port: 23082, since: '2018-07-16 06:42:09', shutdown: '2022-04-22 01:07:58',   fullyRestored: 'True',  owner: 'Savage' },
+    4: { ip: '85.214.69.82',   port: 23073, since: 'unknown',             shutdown: '2013-10-01 10:57:54',   fullyRestored: 'False', owner: 'Spotix' },
+    5: { ip: '209.141.52.123', port: 65401, since: '2008-07-10 02:20:37', shutdown: '2013-10-03 04:41:26',   fullyRestored: 'False', owner: 'Swine Bloo' },
+    6: { ip: '80.72.37.10',    port: 23076, since: '2009-12-17 12:59:37', shutdown: '2017-06-10 02:00:00',   fullyRestored: 'True',  owner: 'helloer & Bonecrusher' },
 };
 
 const SERVER_FLAGS = {
