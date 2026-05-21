@@ -2,14 +2,14 @@
 Script for recounting positions in stats, aggregates in server_profiles and global medals in users.
 This is a must to run after manually deleting or adding records in the stats table.
 
-How to use: ./recount.py [path_to_database.db]
+How to use: ./recount.py [path_to_global.db]
 """
 
 import sqlite3
 import sys
 from pathlib import Path
 
-DB_PATH = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("database.db")
+DB_PATH = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("global.db")
 
 
 class Database:
