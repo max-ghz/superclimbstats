@@ -1,6 +1,6 @@
 -- Temporary mock data for testing database
--- sqlite3 database.db < SCHEMA.sql
--- sqlite3 database.db < MOCK_DATA.sql
+-- sqlite3 global.db < SCHEMA.sql
+-- sqlite3 global.db < MOCK_DATA.sql
 
 INSERT INTO servers (id, server) VALUES
     (1, 'public_server'),
