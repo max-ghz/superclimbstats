@@ -156,12 +156,22 @@ class GlobalMedalsRecounter:
                     SUM(CASE WHEN pos  > 3 THEN 1 ELSE 0 END) AS no_medal
                 FROM ranked
                 GROUP BY user_id
+            ),
+            caps AS (
+                -- Global unique/total caps (each map counted once regardless of server)
+                SELECT user_id,
+                    COUNT(DISTINCT map_name) AS unique_caps_global,
+                    COUNT(*)                 AS total_caps_global
+                FROM stats
+                GROUP BY user_id
             )
             UPDATE users SET
-                gold_global     = COALESCE((SELECT gold     FROM medals WHERE medals.user_id = users.id), 0),
-                silver_global   = COALESCE((SELECT silver   FROM medals WHERE medals.user_id = users.id), 0),
-                bronze_global   = COALESCE((SELECT bronze   FROM medals WHERE medals.user_id = users.id), 0),
-                no_medal_global = COALESCE((SELECT no_medal FROM medals WHERE medals.user_id = users.id), 0)
+                gold_global        = COALESCE((SELECT gold              FROM medals WHERE medals.user_id = users.id), 0),
+                silver_global      = COALESCE((SELECT silver            FROM medals WHERE medals.user_id = users.id), 0),
+                bronze_global      = COALESCE((SELECT bronze            FROM medals WHERE medals.user_id = users.id), 0),
+                no_medal_global    = COALESCE((SELECT no_medal          FROM medals WHERE medals.user_id = users.id), 0),
+                unique_caps_global = COALESCE((SELECT unique_caps_global FROM caps  WHERE caps.user_id   = users.id), 0),
+                total_caps_global  = COALESCE((SELECT total_caps_global  FROM caps  WHERE caps.user_id   = users.id), 0)
         """)
         return self.db.cur.rowcount
 

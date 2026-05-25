@@ -91,8 +91,8 @@ if ($isSpecificServer) {
             u.gold_global          AS gold,
             u.silver_global        AS silver,
             u.bronze_global        AS bronze,
-            SUM(sp.total_caps)     AS total_caps,
-            SUM(sp.unique_caps)    AS unique_caps,
+            u.total_caps_global    AS total_caps,
+            u.unique_caps_global   AS unique_caps,
             MAX(sp.last_active_at) AS last_active_at,
             CASE WHEN COUNT(DISTINCT sp.server_id) = 1 THEN MIN(sp.server_id) ELSE NULL END AS server_id,
             CASE WHEN COUNT(DISTINCT sp.server_id) = 1 THEN MIN(sv.server)    ELSE NULL END AS server

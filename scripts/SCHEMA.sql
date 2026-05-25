@@ -8,10 +8,12 @@ CREATE TABLE IF NOT EXISTS servers (
 CREATE TABLE IF NOT EXISTS users (
     id              INTEGER PRIMARY KEY AUTOINCREMENT,
     username        TEXT    UNIQUE NOT NULL,
-    gold_global     INTEGER DEFAULT 0,
-    silver_global   INTEGER DEFAULT 0,
-    bronze_global   INTEGER DEFAULT 0,
-    no_medal_global INTEGER DEFAULT 0
+    gold_global          INTEGER DEFAULT 0,
+    silver_global        INTEGER DEFAULT 0,
+    bronze_global        INTEGER DEFAULT 0,
+    no_medal_global      INTEGER DEFAULT 0,
+    unique_caps_global   INTEGER DEFAULT 0,
+    total_caps_global    INTEGER DEFAULT 0
 );
 
 CREATE TABLE IF NOT EXISTS server_profiles (

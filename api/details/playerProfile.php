@@ -56,8 +56,8 @@ if ($isSpecificServer) {
             u.silver_global        AS silver,
             u.bronze_global        AS bronze,
             u.no_medal_global      AS no_medal,
-            SUM(sp.total_caps)     AS total_caps,
-            SUM(sp.unique_caps)    AS unique_caps,
+            u.total_caps_global    AS total_caps,
+            u.unique_caps_global   AS unique_caps,
             SUM(sp.playtime)       AS playtime,
             MIN(sp.created_at)     AS created_at,
             MAX(sp.last_active_at) AS last_active_at

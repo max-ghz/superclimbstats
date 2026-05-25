@@ -72,8 +72,8 @@ if ($isSpecificServer) {
             u.gold_global          AS gold,
             u.silver_global        AS silver,
             u.bronze_global        AS bronze,
-            SUM(sp.total_caps)     AS total_caps,
-            SUM(sp.unique_caps)    AS unique_caps,
+            u.total_caps_global    AS total_caps,
+            u.unique_caps_global   AS unique_caps,
             MAX(sp.last_active_at) AS last_active_at
         FROM users u
         JOIN server_profiles sp ON sp.user_id = u.id
