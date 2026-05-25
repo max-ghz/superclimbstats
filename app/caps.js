@@ -1,3 +1,4 @@
+import './theme.js';
 import { loadAllCaps, initServerFilterCaps, loadCapsStats } from '../components/allCaps.js';
 
 document.addEventListener("DOMContentLoaded", () => {

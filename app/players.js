@@ -1,3 +1,4 @@
+import './theme.js';
 import { loadAllPlayers, initServerFilterPlayers } from '../components/allPlayers.js';
 
 document.addEventListener("DOMContentLoaded", () => {

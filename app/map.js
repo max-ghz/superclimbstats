@@ -1,3 +1,4 @@
+import './theme.js';
 import { loadMapInfo, initMapServerFilter } from '../components/mapInfo.js';
 
 document.addEventListener("DOMContentLoaded", () => {

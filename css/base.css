@@ -33,3 +33,104 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+html.dark body {
+    color: #c8c8c8;
+}
+
+html.dark body #container {
+    background: #1e1e1e;
+}
+
+html.dark body #panel {
+    background: #272727;
+}
+
+html.dark body .logoborder {
+    background: #2a2a2a;
+    border-color: #555;
+}
+
+html.dark body #searchbox {
+    background-color: #2a2a2a;
+    border-color: #555;
+    color: #c8c8c8;
+}
+
+html.dark body input[type="submit"] {
+    background: #2a2a2a;
+    color: #c8c8c8;
+    border: 1px solid #555;
+}
+
+html.dark body .sort-trigger {
+    background: #2a2a2a;
+    border-color: #555;
+    color: #c8c8c8;
+}
+
+html.dark body .sort-trigger::after {
+    color: #888;
+}
+
+html.dark body .sort-options {
+    background: #2a2a2a;
+    border-color: #555;
+}
+
+html.dark body .sort-options div:hover,
+html.dark body .sort-options div.active {
+    background: #333;
+    color: #c8c8c8;
+}
+
+html.dark body .row.alt {
+    background: #2a2a2a;
+}
+
+html.dark body .server-info {
+    background: #252525;
+    border-color: #444;
+}
+
+html.dark body .si-value {
+    color: #c8c8c8;
+}
+
+html.dark body .stats-bar {
+    color: #c8c8c8;
+}
+
+html.dark body .pagination {
+    background: #252525;
+}
+
+html.dark body .pagination .current,
+html.dark body .pagination .dots {
+    color: #c8c8c8;
+}
+
+html.dark body .tab {
+    background: linear-gradient(to bottom, #2a2a2a, #222);
+    border-color: #444;
+    color: #aaa;
+}
+
+html.dark body .tab:hover {
+    background: #252525;
+}
+
+html.dark body .tab.active {
+    background: #1e1e1e;
+    border-color: #555;
+    color: #c8c8c8;
+}
+
+html.dark body .server-addr-row {
+    color: #c8c8c8;
+}
+
+html.dark body #theme-toggle {
+    border-color: #555;
+    color: #c8c8c8;
+}

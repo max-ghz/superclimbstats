@@ -1,3 +1,4 @@
+import './theme.js';
 import { loadPlayerProfile } from '../components/playerProfile.js';
 
 document.addEventListener("DOMContentLoaded", () => {

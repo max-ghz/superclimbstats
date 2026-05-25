@@ -1,3 +1,4 @@
+import './theme.js';
 import { formatTime, formatDate } from '../utils/formatters.js';
 import { renderStatus, renderPosition, renderTeam, renderServer } from '../utils/renderers.js';
 import { fetchInitialCaps } from '../api/core/apiClient.js';

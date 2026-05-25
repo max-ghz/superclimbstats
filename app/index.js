@@ -1,3 +1,4 @@
+import './theme.js';
 import { loadLatestCaps } from '../components/latestCaps.js';
 import { loadTopPlayers, initServerFilter } from '../components/topPlayers.js';
 

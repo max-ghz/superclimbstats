@@ -61,7 +61,27 @@
 }
 
 #panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background: #e7e7e7;
+}
+
+#theme-toggle {
+    flex-shrink: 0;
+    margin-right: 10px;
+    padding: 2px 4px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    line-height: 0;
+}
+
+#theme-toggle img {
+    display: block;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
 }
 
 #content {
