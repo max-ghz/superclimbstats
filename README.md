@@ -22,5 +22,7 @@ sqlite3 global.db < scripts/MOCK_DATA.sql
 php -S localhost:8000
 ```
 
-## TODO
-After verifying and deleting the records, ensure that `recount.py` follows the defined counting standards.
+## Roadmap
+- [ ] Add an events page where players can see when they gained or lost a medal.
+- [ ] Add a medal list where players can view all of their earned medals.
+- [ ] After verifying and deleting the records, ensure that `recount.py` follows the defined counting standards.
