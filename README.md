@@ -23,6 +23,9 @@ php -S localhost:8000
 ```
 
 ## Roadmap
-- [ ] Add an events page where players can see when they gained or lost a medal.
-- [ ] Add a medal list where players can view all of their earned medals.
+- [ ] 404 Not Found page
+- [ ] Webkit scrollbar
+- [ ] Playtime ranking
+- [ ] Events page where players can see when they gained or lost a medal.
+- [ ] Medal list where players can view all of their earned medals.
 - [ ] After verifying and deleting the records, ensure that `recount.py` follows the defined counting standards.
